@@ -1,0 +1,26 @@
+<project>
+ 
+  <publishDate position="right"/>
+  <version position="right"/>
+  
+  <body>
+ 
+    <breadcrumbs>
+      <item name="Nasdanika" href="https://www.nasdanika.org"/>
+    </breadcrumbs>
+ 
+   <menu name="Main">
+      <item name="Overview" href="index.html" />
+   </menu>
+ 
+   <footer><![CDATA[All rights reserved.]]></footer>
+ 
+  </body>    
+ 
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.7</version>
+  </skin>
+ 
+</project>

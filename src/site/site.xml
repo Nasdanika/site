@@ -12,6 +12,36 @@
    <menu name="Main">
       <item name="Overview" href="index.html" />
    </menu>
+
+   <menu name="Server-side">
+      <item name="HTML" href="https://github.com/Nasdanika/html" />
+      <item name="Foundation Server" href="https://github.com/Nasdanika/server" />
+   </menu>
+   
+   <menu name="Code generation">
+      <item name="Config" href="https://github.com/Nasdanika/config" />
+      <item name="Codegen" href="https://github.com/Nasdanika/codegen" />
+      <item name="Codegen Ecore" href="https://github.com/Nasdanika/codegen-ecore" />
+      <item name="Codegen Ecore Web UI" href="https://github.com/Nasdanika/codegen-ecore-web-ui" />
+   </menu>
+
+   <menu name="Knowledge management">
+      <item name="Help" href="https://github.com/Nasdanika/help" />
+      <item name="Docgen Ecore" href="https://github.com/Nasdanika/docgen-ecore" />
+   </menu>
+   
+   <menu name="Eclipse UI">
+      <item name="Presentation" href="https://github.com/Nasdanika/presentation" />
+   </menu>
+
+   <menu name="Foundation">
+      <item name="Maven OGSi" href="#" />
+      <item name="Third-party" href="#" />
+   </menu>
+   
+   <menu name="Examples">
+      <item name="Nature" href="https://github.com/Nasdanika/nature" />
+   </menu>
  
    <footer><![CDATA[All rights reserved.]]></footer>
  

@@ -8,7 +8,7 @@
 
 ## Code generation
 
-* [Config](https://github.com/Nasdanika/config)
+* [Config](../config/index.html)
 * [Codegen](https://github.com/Nasdanika/codegen)
 * [Codegen Ecore](https://github.com/Nasdanika/codegen-ecore)
 * [Codegen Ecore Web UI](https://github.com/Nasdanika/codegen-ecore-web-ui)

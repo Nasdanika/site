@@ -27,7 +27,7 @@
 
    <menu name="Knowledge management">
       <item name="Help" href="https://github.com/Nasdanika/help" />
-      <item name="Docgen Ecore" href="https://github.com/Nasdanika/docgen-ecore" />
+      <item name="Docgen Ecore" href="../docgen-ecore/index.html" />
    </menu>
    
    <menu name="Eclipse UI">

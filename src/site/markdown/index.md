@@ -16,7 +16,7 @@
 ## Knowledge management
 
 * [Help](https://github.com/Nasdanika/help)
-* [Docgen Ecore](https://github.com/Nasdanika/docgen-ecore)
+* [Docgen Ecore](../docgen-ecore/index.html)
 
 ## Eclipse UI
 

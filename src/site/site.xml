@@ -5,10 +5,6 @@
   
   <body>
  
-    <breadcrumbs>
-      <item name="Nasdanika" href="https://www.nasdanika.org"/>
-    </breadcrumbs>
- 
    <menu name="Main">
       <item name="Overview" href="index.html" />
    </menu>

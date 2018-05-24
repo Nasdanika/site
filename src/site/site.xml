@@ -20,7 +20,7 @@
    
    <menu name="Code generation">
       <item name="Config" href="../config/index.html" />
-      <item name="Codegen" href="https://github.com/Nasdanika/codegen" />
+      <item name="Codegen" href="../codegen/index.html" />
       <item name="Codegen Ecore" href="https://github.com/Nasdanika/codegen-ecore" />
       <item name="Codegen Ecore Web UI" href="https://github.com/Nasdanika/codegen-ecore-web-ui" />
    </menu>

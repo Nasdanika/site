@@ -9,7 +9,7 @@
 ## Code generation
 
 * [Config](../config/index.html)
-* [Codegen](https://github.com/Nasdanika/codegen)
+* [Codegen](../codegen/index.html)
 * [Codegen Ecore](https://github.com/Nasdanika/codegen-ecore)
 * [Codegen Ecore Web UI](https://github.com/Nasdanika/codegen-ecore-web-ui)
 

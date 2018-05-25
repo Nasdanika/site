@@ -4,7 +4,7 @@
 ## Server-side
 
 * [HTML](../html/index.html)
-* [Foundation Server](https://github.com/Nasdanika/server) 
+* [Foundation Server](../server/index.html) 
 
 ## Code generation
 

@@ -15,7 +15,7 @@
 
    <menu name="Server-side">
       <item name="HTML" href="../html/index.html" />
-      <item name="Foundation Server" href="https://github.com/Nasdanika/server" />
+      <item name="Foundation Server" href="../server/index.html" />
    </menu>
    
    <menu name="Code generation">

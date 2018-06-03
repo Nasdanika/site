@@ -136,6 +136,8 @@ applied many times over, it may make sense to do it manually once, then paramete
 Author's experience indicates that transformations/templates tend to become too complex and difficult to understand pretty quickly. 
 Sections below outline several tools and approaches which help to simplify the transformation/code generation process and keep it clear and understandable.         
 
+Code generation might be a key enabler for a successful adoption of architecture by making it easier to follow the architecture by generating code from reference implementation models with collecting variation points from users and pulling data from external systems, than to deviating from it by manual coding.
+
 ### Nasdanika Codegen
 
 #### Generators model

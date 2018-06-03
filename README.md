@@ -1,2 +1,3 @@
-# site
-Maven site for www.nasdanika.org
+# Site
+
+Maven site for https://www.nasdanika.org

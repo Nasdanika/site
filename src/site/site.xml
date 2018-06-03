@@ -11,6 +11,7 @@
  
    <menu name="Main">
       <item name="Overview" href="index.html" />
+      <item name="Nasdanika @ GitHub" href="https://github.com/Nasdanika" />
    </menu>
 
    <menu name="Server-side">
@@ -21,26 +22,33 @@
    <menu name="Code generation">
       <item name="Config" href="../config/index.html" />
       <item name="Codegen" href="../codegen/index.html" />
-      <item name="Codegen Ecore" href="https://github.com/Nasdanika/codegen-ecore" />
-      <item name="Codegen Ecore Web UI" href="https://github.com/Nasdanika/codegen-ecore-web-ui" />
+      <item name="Codegen Ecore" href="../codegen-ecore/index.html" />
+      <item name="Codegen Ecore Web UI" href="../codegen-ecore-web-ui/index.html" />
+      <item name="Workspace Wizard" href="../workspace-wizard/index.html" />
    </menu>
 
    <menu name="Knowledge management">
-      <item name="Help" href="https://github.com/Nasdanika/help" />
+      <item name="Help" href="../help/index.html" />
       <item name="Docgen Ecore" href="../docgen-ecore/index.html" />
    </menu>
    
    <menu name="Eclipse UI">
-      <item name="Presentation" href="https://github.com/Nasdanika/presentation" />
+      <item name="Presentation" href="../presentation/index.html" />
    </menu>
+   
+   <menu name="UX">
+      <item name="Story" href="../story/index.html" />
+      <item name="WebTest" href="../webtest/index.html" />
+      <item name="WebTest Model" href="../webtest-model/index.html" />
+   </menu>   
 
-   <menu name="Foundation">
+   <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
       <item name="Third-party" href="#" />
    </menu>
    
-   <menu name="Examples">
-      <item name="Nature" href="https://github.com/Nasdanika/nature" />
+   <menu name="Articles">
+      <item name="Model-Driven Development and code generation" href="articles/mdd.html" />
    </menu>
  
    <footer><![CDATA[All rights reserved.]]></footer>

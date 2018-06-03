@@ -6,28 +6,13 @@
 * Effective knowledge elicitation, retention, and dissemination:
     * Capturing of knowledge in documented models.
     * Web-based documentation system serving models documentation and visualizations. 
-* Working at a high level of abstraction by leveraging model-driven development.
+* Working at a high level of abstraction by leveraging [model-driven development](articles/mdd.html).
 * Elimination of repetitive tasks through code generation and metadata-driven logic.
 * Focus - full stack [T-shaped](https://en.wikipedia.org/wiki/T-shaped_skills) developer with deep knowledge of Java.
 
-## Products 
-* [Server](https://github.com/Nasdanika/server)
-* [HTML](https://github.com/Nasdanika/html) - Java bindings for HTML, Bootstrap, Font Awesome, KnockoutJS and AngularJS. This bundle provides a fluent API for building HTML/Bootstrap code. It allows the developer to stay in Java IDE and leverage code assist and other features of Eclipse IDE and Java language. For example, this bundle makes it easy to build "polymorphic Web UI's" where base UI is built by the foundation classes and customized as needed by sub-classes. 
-* [Workspace Wizard](https://github.com/Nasdanika/workspace-wizard) - Wizards to generate modeling project workspace and NFS-based application workspace. These wizards generate Maven/Tycho projects to produce an Eclipse product and P2 repository for the application.
-* [Code generation](https://github.com/Nasdanika/codegen) - Code generation Ecore/CDO model and editor. The model provides classes which can generate Eclipse project, file, Java compilation unit (with merging of generated code with existing), etc.  
-    * [Ecore](https://github.com/Nasdanika/codegen-ecore) - Code generation from EMF Ecore models. The Nasdanika Ecore code generation editor allows to select generation targets and then select model elements for which the code should be generated. E.g. you may have a model with dozens of classes and hundereds of features and operations, but generate Web UI classes just for a couple of classes and a dozen of features. 
-        * [Web UI Generation Target](https://github.com/Nasdanika/codegen-ecore-web-ui) - Generators and templates for generating rendereres, routes,  and resource bundles from selected EClasses and their features and operations.
-* [WebTest](https://github.com/Nasdanika/webtest) - Web/mobile UI testing framework built on [JUnit](http://junit.org/junit4/) and [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/). Nasdanika WebTest encourages abstraction of tests from the low-level UI manipulation logic using the "Application UI Driver" which contains Actors and Pages. WebTest records test execution flow in a model and captures screenshots during execution. The model can then be served by the ``org.nasdanika.cdo.web.doc`` bundle. WebTest supports "sketched" execution where you may not have a UI yet, only sketches, and can already write the UI driver and tests and run them. See [Tests with sketches](https://server-side-java-development-for-innovators.books.nasdanika.org/chapter-2-automated-ui-tests/tests/sketches/) chapter in the "Server-side Java Development for Innovators" book (see below). 
-    * [Model](https://github.com/Nasdanika/webtest-model) - Ecore/CDO model for storing results of Web UI tests.
-* [Story](https://github.com/Nasdanika/story) - User story model and editor. User story models can be used for capturing descriptions of software features from an end-user perspective. Results of automated tests executed by WebTest can be linked to user stories scenarios documentation by the CDO Web Doc bundle. 
-* [Server-side Java Development for Innovators](https://github.com/Nasdanika/server-side-java-development-for-innovators) - Sources of the [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/) book. The goal of this book to walk the reader through the process of creation of a model-driven web application built using Eclipse and Nasdanika tools and frameworks.
- 
-
-
-
 ### Server-side
 
-* [HTML](../html/index.html)
+* [HTML](../html/index.html) - Java bindings for HTML, Bootstrap, Font Awesome, KnockoutJS and AngularJS. This bundle provides a fluent API for building HTML/Bootstrap code. It allows the developer to stay in Java IDE and leverage code assist and other features of Eclipse IDE and Java language. For example, this bundle makes it easy to build "polymorphic Web UI's" where base UI is built by the foundation classes and customized as needed by sub-classes.
 * [Foundation Server](../server/org.nasdanika.repository/index.html) - An [Equinox](http://www.eclipse.org/equinox/)/[OSGi](https://www.osgi.org/developer/what-is-osgi/)-based framework for domain-driven development of web applications. Server contains a number of bundles some of them are listed below.
     * [CDO](../server/org.nasdanika.cdo/index.html) - [EMF CDO Model Repositiory](https://eclipse.org/cdo/documentation/) provides transparent persistence for EMF Ecore models, i.e. all you need to persist a model is to generate CDO code from it, CDO takes care of the rest. Nasdanika CDO bundles provide several OSGi components for building CDO applications and several CDO contexts.  
         * [Security](../server/org.nasdanika.cdo.security/index.html) - provides classes and interfaces for implementing application-level security.  
@@ -35,28 +20,40 @@
             * [Doc](../server/org.nasdanika.cdo.web.doc/index.html) - Documentation bundle serves CDO models and OSGi components documentation including visualizations of CDO models as UML class diagrams and OSGi components wiring as component diagrams. With this bundle you can show your stakeholders how your system actually works. This bundle also serves hand-crafted documentation, [user stories models](../server/org.nasdanika.story/index.html) documentation with visualizations as use case and activity diagrams, and WebTest test results with slideshows of captured screenshots, so people can explore different flows in the system.
     * [Web](../server/org.nasdanika.web/index.html) - this bundle contains the Nasdanika HTTP handling framework, which is buit on the Servlet API and uses the concept of routes (inpspired by [ExpressJS](https://expressjs.com/). There are three types of routes - root routes, object routes matching object class and executed in the context of an object, and EObject routes matching EClass name and namespace URI and executed in the context of EObject and, typically, CDOView or CDOTransaction. 
 
-## Code generation
+### Code generation
 
 * [Config](../config/index.html)
-* [Codegen](../codegen/index.html)
-* [Codegen Ecore](../codegen-ecore/index.html)
-* [Codegen Ecore Web UI](../codegen-ecore-web-ui/index.html)
-* [Workspace Wizard](../workspace-wizard/index.html)
+* [Codegen](../codegen/index.html) - Code generation Ecore/CDO model and editor. The model provides classes which can generate Eclipse project, file, Java compilation unit (with merging of generated code with existing), etc.  
+* [Codegen Ecore](../codegen-ecore/index.html) - Code generation from EMF Ecore models. The Nasdanika Ecore code generation editor allows to select generation targets and then select model elements for which the code should be generated. E.g. you may have a model with dozens of classes and hundreds of features and operations, but generate Web UI classes just for a couple of classes and a dozen of features. 
+* [Codegen Ecore Web UI](../codegen-ecore-web-ui/index.html) - Generators and templates for generating rendereres, routes,  and resource bundles from selected EClasses and their features and operations.
+* [Workspace Wizard](../workspace-wizard/index.html) - Wizards to generate modeling project workspace and NFS-based application workspace. These wizards generate Maven/Tycho projects to produce an Eclipse product and P2 repository for the application.
 
-## Knowledge management
+### Knowledge management
 
-* [Help](../help/index.html)
-* [Docgen Ecore](../docgen-ecore/index.html)
+* [Help](../help/index.html) provides:
+    * The primary toc for other Nasdanika help toc's to link to.
+    * Markdown content producer which converts intercepts *.md.html help resource requests, finds corresponding *.md files and converts them to HTML on the fly.
+    * Markdown processor extensions.
+* [Docgen Ecore](../docgen-ecore/index.html) - Documentation generator for Ecore models - static HTML and Eclipse help.
 
-## Eclipse UI
+### Eclipse UI
 
-* [Presentation](../presentation/index.html)
+* [Presentation](../presentation/index.html) - features classes and extension points related to the Eclipse UI presentation such as SWT, JFace, and EMF editors.
 
-## Dependencies
+### UX
+
+* [Story](../story/index.html) - User story model and editor. User story models can be used for capturing descriptions of software features from an end-user perspective. Results of automated tests executed by WebTest can be linked to user stories scenarios documentation by the CDO Web Doc bundle. 
+* [WebTest](../webtest/index.html) - Web/mobile UI testing framework built on [JUnit](http://junit.org/junit4/) and [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/). Nasdanika WebTest encourages abstraction of tests from the low-level UI manipulation logic using the "Application UI Driver" which contains Actors and Pages. WebTest records test execution flow in a model and captures screenshots during execution. The model can then be served by the [org.nasdanika.cdo.web.doc](../server/org.nasdanika.cdo.web.doc/index.html) bundle. WebTest supports "sketched" execution where you may not have a UI yet, only sketches, and can already write the UI driver and tests and run them. See [Tests with sketches](https://server-side-java-development-for-innovators.books.nasdanika.org/chapter-2-automated-ui-tests/tests/sketches/) chapter in the "Server-side Java Development for Innovators" book (see below).
+* [WebTest Model](../webtest-model/index.html) - Ecore/CDO model for storing results of Web UI tests.
+
+
+### Dependencies
 
 * Maven OSGi
 * Third-party
 
-## Articles
+## Articles and books
 
-* [Model-Driven development and code generation](articles/mdd.html)
+* [Model-Driven development and code generation](articles/mdd.html).
+* [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/) book. The goal of this book to walk the reader through the process of creation of a model-driven web application built using Eclipse and Nasdanika tools and frameworks.
+

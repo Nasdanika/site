@@ -10,6 +10,8 @@
 * Elimination of repetitive tasks through code generation and metadata-driven logic.
 * Focus - full stack [T-shaped](https://en.wikipedia.org/wiki/T-shaped_skills) developer with deep knowledge of Java.
 
+## Products
+
 ### Server-side
 
 * [HTML](../html/index.html) - Java bindings for HTML, Bootstrap, Font Awesome, KnockoutJS and AngularJS. This bundle provides a fluent API for building HTML/Bootstrap code. It allows the developer to stay in Java IDE and leverage code assist and other features of Eclipse IDE and Java language. For example, this bundle makes it easy to build "polymorphic Web UI's" where base UI is built by the foundation classes and customized as needed by sub-classes.
@@ -22,7 +24,7 @@
 
 ### Code generation
 
-* [Config](../config/index.html)
+* [Config](../config/index.html) - provides a model and an editor for creating hierarchical configurations.
 * [Codegen](../codegen/index.html) - Code generation Ecore/CDO model and editor. The model provides classes which can generate Eclipse project, file, Java compilation unit (with merging of generated code with existing), etc.  
 * [Codegen Ecore](../codegen-ecore/index.html) - Code generation from EMF Ecore models. The Nasdanika Ecore code generation editor allows to select generation targets and then select model elements for which the code should be generated. E.g. you may have a model with dozens of classes and hundreds of features and operations, but generate Web UI classes just for a couple of classes and a dozen of features. 
 * [Codegen Ecore Web UI](../codegen-ecore-web-ui/index.html) - Generators and templates for generating rendereres, routes,  and resource bundles from selected EClasses and their features and operations.
@@ -54,6 +56,6 @@
 
 ## Articles and books
 
-* [Model-Driven development and code generation](articles/mdd.html).
-* [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/) book. The goal of this book to walk the reader through the process of creation of a model-driven web application built using Eclipse and Nasdanika tools and frameworks.
+* [Model-Driven Development](articles/mdd.html).
+* [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/).
 

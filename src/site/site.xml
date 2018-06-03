@@ -48,7 +48,7 @@
    </menu>
    
    <menu name="Articles and books">
-      <item name="Model-Driven Development and code generation" href="articles/mdd.html" />
+      <item name="Model-Driven Development" href="articles/mdd.html" />
       <item name="Server-side Java Development for Innovators" href="https://server-side-java-development-for-innovators.books.nasdanika.org/" />
    </menu>
  

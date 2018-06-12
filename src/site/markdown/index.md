@@ -54,7 +54,11 @@
 * Maven OSGi
 * Third-party
 
-## Articles and books
+## Eclipse packages
+
+* [Nasdanika Tools Suite](../nasdanika-tools-suite/index.html) - An extension of the [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen3a) package with additional features and plugins.
+
+## Documentation
 
 * [Model-Driven Development](articles/mdd.html).
 * [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/).

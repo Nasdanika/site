@@ -47,9 +47,15 @@
       <item name="Third-party" href="#" />
    </menu>
    
-   <menu name="Articles and books">
+   <menu name="Eclipse Packages">
+      <item name="Nasdanika Tools Suite" href="../nasdanika-tools-suite/index.html" />
+   </menu>
+   
+   
+   <menu name="Documentation">
       <item name="Model-Driven Development" href="articles/mdd.html" />
       <item name="Server-side Java Development for Innovators" href="https://server-side-java-development-for-innovators.books.nasdanika.org/" />
+      <!-- <item name="Guides" href="../guides/index.html" /> -->
    </menu>
  
    <footer><![CDATA[All rights reserved.]]></footer>

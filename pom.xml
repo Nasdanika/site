@@ -11,7 +11,7 @@
 			<!-- Enabling the use of FTP -->
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ssh</artifactId>
+				<artifactId>wagon-ftp</artifactId>
 				<version>3.0.0</version>
 			</extension>
 		</extensions>
@@ -53,7 +53,7 @@
 	<distributionManagement>
 		<site>
 			<id>nasdanika-org</id>
-			<url>sftp://${env.FTP_SERVER}/site</url>
+			<url>ftp://${env.FTP_SERVER}/site</url>
 		</site>
 	</distributionManagement>	
 	

@@ -21,33 +21,6 @@
 			    <artifactId>maven-site-plugin</artifactId>
 			    <version>3.7.1</version>
 			</plugin>		
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.0.1</version>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<phase>pre-site</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/site</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${basedir}/target</directory>
-									<includes>repository/**</includes>
-									<filtering>false</filtering>
-								</resource>
-								<resource>
-									<directory>${basedir}/../org.nasdanika.docgen.ecore.parent/target/site</directory>
-									<filtering>false</filtering>
-								</resource>								
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>

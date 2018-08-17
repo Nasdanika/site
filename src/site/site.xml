@@ -29,6 +29,7 @@
 
    <menu name="Knowledge management">
       <item name="Help" href="../help/index.html" />
+      <item name="Docgen" href="../docgen/index.html" />
       <item name="Docgen Ecore" href="../docgen-ecore/index.html" />
    </menu>
    

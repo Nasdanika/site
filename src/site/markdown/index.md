@@ -42,6 +42,7 @@ By doing so it increases the pool of developers, the speed of application and in
     * The primary toc for other Nasdanika help toc's to link to.
     * Markdown content producer which converts intercepts *.md.html help resource requests, finds corresponding *.md files and converts them to HTML on the fly.
     * Markdown processor extensions.
+* [Docgen](../docgen/index.html) - Documentation generation framework.
 * [Docgen Ecore](../docgen-ecore/index.html) - Documentation generator for Ecore models - static HTML and Eclipse help.
 
 ### Eclipse UI

@@ -45,7 +45,7 @@
 
    <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
-      <item name="Third-party" href="#" />
+      <item name="Third-party" href="../third-party/index.html" />
    </menu>
    
    <menu name="Eclipse Packages">

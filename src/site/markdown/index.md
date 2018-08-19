@@ -58,8 +58,8 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ### Dependencies
 
-* Maven OSGi
-* Third-party
+* [Maven OSGi](https://github.com/Nasdanika/maven-osgi) - Maven dependencies wrapped into OSGi bundles with [Reficio p2 maven plugin](https://github.com/reficio/p2-maven-plugin).
+* [Third-party](../third-party/index.html) - Third party dependencies which cannot be added with the Maven OSGi product. 
 
 ## Eclipse packages
 

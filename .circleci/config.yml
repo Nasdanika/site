@@ -22,4 +22,4 @@ jobs:
     
     steps:
       - checkout
-      - run: mvn -s .circleci/settings.xml clean site-deploy
+      - run: mvn -s .circleci/settings.xml clean generate-resources site-deploy

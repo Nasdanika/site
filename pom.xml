@@ -6,6 +6,19 @@
 	<artifactId>site</artifactId>
 	<name>Nasdanika</name>
 	<!-- <packaging>eclipse-repository</packaging>-->
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>plugins-snapshot-local</id>
+			<name>plugins-snapshot-local</name>
+			<url>http://repo.spring.io/plugins-snapshot-local</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>default</layout>
+		</pluginRepository>
+	</pluginRepositories>	
+	
 	<build>
 		<extensions>
 			<!-- Enabling the use of FTP -->
@@ -21,6 +34,30 @@
 			    <artifactId>maven-site-plugin</artifactId>
 			    <version>3.7.1</version>
 			</plugin>
+
+			<plugin>
+				<groupId>org.springsource.ide</groupId>
+				<artifactId>p2.composite.site.maven.plugin</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<id>repository</id>
+						<configuration>
+							<name>Nasdanika Composite Repository</name>
+							<target>${project.build.directory}/site/repository</target>
+							<sites>
+								<param>https://www.nasdanika.org/products/codegen/repository</param>
+								<param>https://www.nasdanika.org/products/config/repository</param>
+								<param>https://www.nasdanika.org/products/docgen/repository</param>
+							</sites>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+      			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>

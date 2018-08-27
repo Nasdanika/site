@@ -65,6 +65,10 @@ By doing so it increases the pool of developers, the speed of application and in
 
 * [Nasdanika Tools Suite](../nasdanika-tools-suite/index.html) - An extension of the [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen3a) package with additional features and plugins.
 
+## Composite repository
+
+``https://www.nasdanika.org/products/site/repository``
+
 ## Documentation
 
 * [Model-Driven Development](articles/mdd.html).

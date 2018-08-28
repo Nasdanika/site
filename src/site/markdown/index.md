@@ -63,7 +63,7 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ## Eclipse packages
 
-* [Nasdanika Tools Suite](../nasdanika-tools-suite/index.html) - An extension of the [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen3a) package with additional features and plugins.
+* [Nasdanika Tool Suite](../tools/index.html) - An extension of the [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/photon) package with additional features and plugins.
 
 ## Composite repository
 

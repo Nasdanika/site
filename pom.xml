@@ -50,8 +50,13 @@
 							<target>${project.build.directory}/site/repository</target>
 							<sites>
 								<param>https://www.nasdanika.org/products/codegen/repository</param>
+								<param>https://www.nasdanika.org/products/codegen-ecore/repository</param>
+								<param>https://www.nasdanika.org/products/codegen-ecore-web-ui/repository</param>
 								<param>https://www.nasdanika.org/products/config/repository</param>
 								<param>https://www.nasdanika.org/products/docgen/repository</param>
+								<param>https://www.nasdanika.org/products/docgen-ecore/repository</param>
+								<param>https://www.nasdanika.org/products/workspace-wizard/repository</param>
+								<param>https://www.nasdanika.org/products/tools/repository</param>
 							</sites>
 						</configuration>
 					</execution>

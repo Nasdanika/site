@@ -73,4 +73,8 @@ By doing so it increases the pool of developers, the speed of application and in
 
 * [Model-Driven Development](articles/mdd.html).
 * [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/).
+* [Guides](../guides/index.html) - Guides covering different development topics not related to a particular Nasdanika product. 
 
+## Reference implementations
+
+* [Bank](../bank/index.html) - An online bank application demonstrates application of model-driven development approach with Eclipse and Nasdanika technologies and tools. 

@@ -55,6 +55,10 @@ By doing so it increases the pool of developers, the speed of application and in
 * [WebTest](../webtest/index.html) - Web/mobile UI testing framework built on [JUnit](http://junit.org/junit4/) and [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/). Nasdanika WebTest encourages abstraction of tests from the low-level UI manipulation logic using the "Application UI Driver" which contains Actors and Pages. WebTest records test execution flow in a model and captures screenshots during execution. The model can then be served by the [org.nasdanika.cdo.web.doc](../server/org.nasdanika.cdo.web.doc/index.html) bundle. WebTest supports "sketched" execution where you may not have a UI yet, only sketches, and can already write the UI driver and tests and run them. See [Tests with sketches](https://server-side-java-development-for-innovators.books.nasdanika.org/chapter-2-automated-ui-tests/tests/sketches/) chapter in the "Server-side Java Development for Innovators" book (see below).
 * [WebTest Model](../webtest-model/index.html) - Ecore/CDO model for storing results of Web UI tests.
 
+## Tools
+
+* [Tracker](../tracker/index.html) - An issue tracker for Maven projects. 
+
 
 ### Dependencies
 

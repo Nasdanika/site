@@ -43,6 +43,10 @@
       <item name="WebTest Model" href="../webtest-model/index.html" />
    </menu>   
 
+   <menu name="Tools">
+      <item name="Tracker" href="../tracker/index.html" />
+   </menu>
+
    <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
       <item name="Third-party" href="../third-party/index.html" />

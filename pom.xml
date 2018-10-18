@@ -21,6 +21,7 @@
 	
 	<properties>
 		<siteDir>${project.artifactId}/${project.version}</siteDir>
+
 		<products.html.version>.</products.html.version> <!-- A trick for the old deployment approach. Update to version numbers. -->
 		<products.server.version>.</products.server.version>
 		 

@@ -40,7 +40,7 @@
 		<products.webtest.version>.</products.webtest.version> 
 		<products.webtest-model.version>.</products.webtest-model.version>
 		 
-		<products.tracker.version>.</products.tracker.version>
+		<products.tracker.version>0.1.0-SNAPSHOT</products.tracker.version>
 		 
 		<products.maven-osgi.version>.</products.maven-osgi.version> 
 		<products.third-party.version>.</products.third-party.version> 

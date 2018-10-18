@@ -28,7 +28,7 @@ For example, a map is a model of territory. The map is not the territory it desc
 So read on to find out how (domain) modeling can be leveraged to capture and disseminate domain/organizational knowledge, and reduce amount of manual effort, errors, and inefficiencies in software development practices.
 There is a [companion presentation](https://www.slideshare.net/PavelVlasov2/modeldriven-development-and-code-generation) which contains key points and illustration. It might be a good idea to go through the presentation before reading this article - to get a general idea and decide whether it is of interest for you at all.  
   
-## A very quick overview of EMF (Core)
+#[[##]]# A very quick overview of EMF (Core)
 
 Let's start with a quick look at [EMF](https://www.eclipse.org/modeling/emf/) because some modeling and code generation tools mentioned below are part of EMF, and some are based on EMF.
 
@@ -51,7 +51,7 @@ Once you have a model it can be:
 * [Persisted to a repository](https://wiki.eclipse.org/CDO) for concurrent transactional access. 
 * Edited in a generated tree editor.
 * Edited in a diagram editor created with [Sirius](https://eclipse.org/sirius/overview.html).
-* Viewed and edited in Web UI using either [EMF Client Platform](https://eclipse.org/ecp/) or [Nasdanika CDO Web Bundle](../../server/org.nasdanika.cdo.web/index.html).     
+* Viewed and edited in Web UI using either [EMF Client Platform](https://eclipse.org/ecp/) or [Nasdanika CDO Web Bundle](../../../server/${products.server.version}/org.nasdanika.cdo.web/index.html).     
 * Edited in an XText-generated editor with syntax highlighting and error checking.
 
 Also models can cross-reference each other so a large logical model may be broken into several resources (e.g. files) with different lifecycles and owned/maintained by different teams.
@@ -66,7 +66,7 @@ EMF provides the following benefits:
 * Model documentation can be published to internet/intranet so it is available to a wide audience to (re)view, refine and form a common understanding of the problem domain. 
 * Information can be entered into the models using a wide variety of generated editors - diagram, web, text, tree, forms - with validation of data being entered. 
 
-## Nasdanika CDO Web Bundle
+#[[##]]# Nasdanika CDO Web Bundle
 
 Nasdanika CDO Web Bundle ``org.nasdanika.cdo.web`` allows to interact with objects stored in a CDO repository over HTTP. It does it in the following way:
 
@@ -109,9 +109,9 @@ Replacing such a spreadsheet with an intranet web application would provide the 
 * Scheduled automated notifications and escalations.
 * Over time it may be possible to integrate some of the involved systems with the application even if they can't be integrated with each other.
 
-## Nasdanika CDO Web Doc Bundle
+#[[##]]# Nasdanika CDO Web Doc Bundle
 
-[``org.nasdanika.cdo.web.doc``](../../server/org.nasdanika.cdo.web.doc/index.html) is a "companion" bundle for ``org.nasdanika.cdo.web``. It provides functionality for serving integrated documentation:
+[``org.nasdanika.cdo.web.doc``](../../../server/${products.server.version}/org.nasdanika.cdo.web.doc/index.html) is a "companion" bundle for ``org.nasdanika.cdo.web``. It provides functionality for serving integrated documentation:
 
 * Bundles, components and services information, including auto-generated dynamic UML diagrams. This allows to take a glimpse into the running application to better understand relationships between different application parts.
 * Models documentation, also including auto-generated dynamic UML class diagrams. Such diagrams help in understanding of relationships between model elements.
@@ -121,7 +121,7 @@ Models documentation is treated as [markdown](https://en.wikipedia.org/wiki/Mark
 
 The [Documentation System Overview](https://server-side-java-development-for-innovators.books.nasdanika.org/chapter-0-setup/documentation-system-overview.html) chapter of the [Server-side Java Development for Innovators](https://server-side-java-development-for-innovators.books.nasdanika.org/) online book provides additional, although a bit outdated, information, including screenshots.
 
-## Code Generation
+#[[##]]# Code Generation
 
 This section explains advantages of model-driven approaches to code generation. 
 The code generation approach explained below consists of capturing knowledge in models and then transforming those models to some output which either changes behavior of executable software 
@@ -144,7 +144,7 @@ Code generation might be a key enabler for a successful adoption of architecture
 
 There are multiple ways to generate code. For example, Eclipse resources API to work with projects, files, and folders; JDT API to work with packages and compilation units; JMerger to automatically merge generated and hand-crafted code, different template engines, ...
 
-[Nasdanika Codegen](../../codegen/index.html) provides a model which abstracts multiple generation approaches. 
+[Nasdanika Codegen](../../../codegen/${products.codegen.version}/index.html) provides a model which abstracts multiple generation approaches. 
 It also provides a model editor and abstract classes for creating wizards and multi-form editors to collect input from users to be used as input for the generation models.
 Users of the model and the editor operate with the concepts of Eclipse IDE - projects, folders, files, packages, classes, interfaces, methods, etc. instead of disparate low-level API's to generate those. 
 
@@ -161,12 +161,13 @@ bounded contexts and Anti-Corruption Layers for micro-services (see below).
 
 #### Wizard model and EMF Forms based wizard
 
-There is a [wizard](../../codegen/apidocs/editor/index.html?org/nasdanika/codegen/presentation/AbstractModelCodegenWizard.html) which takes an input model and renders wizard pages using EMF Forms or [EObjectRenderer](../../presentation/apidocs/org.nasdanika.presentation/apidocs/index.html?org/nasdanika/presentation/EObjectRenderer.html).
+There is a [wizard](../../../codegen/${products.codegen.version}/apidocs/editor/index.html?org/nasdanika/codegen/presentation/AbstractModelCodegenWizard.html) which takes an input model 
+and renders wizard pages using EMF Forms or [EObjectRenderer](../../../presentation/${products.presentation.version}/apidocs/org.nasdanika.presentation/apidocs/index.html?org/nasdanika/presentation/EObjectRenderer.html).
 This approach makes building code generation wizards much easier because developers don't need to work on the UI code except for advanced cases. 
 
 ### Nasdanika Codegen Ecore
 
-[Nasdanika Codegen Ecore](../../codegen-ecore/index.html) allows to generate code for selected elements of the source model using selected generation targets. 
+[Nasdanika Codegen Ecore](../../../codegen-ecore/${products.codegen-ecore.version}/index.html) allows to generate code for selected elements of the source model using selected generation targets. 
 Generation targets may contribute configuration model elements to allows users to customize generation. EMF Forms or EObjectRenderer are used to render the configuration model elements thus freeing the generator developers from having to work with SWT/JFace. 
 
 Speaking in [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) terms, it allows to generate Bounded Context and Anti-Corruption Layer from the canonical domain model and generators for a particular back-end. 
@@ -179,14 +180,14 @@ micro-service may need only transaction date, amount, and description attributes
 
 This is how this problem can be solved with Nasdanika Codegen Ecore:
 
-* The canonical model is stored as an Ecore model. In addition to being input to the generator, documentation for the model may be generated with [Docgen Ecore](../../docgen-ecore/index.htlm) and deployed to the company intranet, helping the organization to speak the "Ubiquitous language".
+* The canonical model is stored as an Ecore model. In addition to being input to the generator, documentation for the model may be generated with [Docgen Ecore](../../../docgen-ecore/${products.docgen-ecore.version}/index.html) and deployed to the company intranet, helping the organization to speak the "Ubiquitous language".
 * A generation target is created for a particular back-end or several back-ends.
 * The micro-service team uses the editor to select classes and attributes of the canonical model which are used by their code. They also may configure the generation target, e.g. specify format pattern for the date, and configure caching.
 * Then the micro-service team generates bounded context classes or interfaces and Anti-Corruption Layer classes. Because the bounded context classes are generated from the canonical model they will be the same for all back-ends, only the Anti-Corruption Layer will change. And because the bounded context classes don't change, the micro-service code also would require only minor changes to switch to another back-end or to support several back-ends.         
 
 #### Web UI Generation Target
 
-[Nasdanika Codegen Ecore Web UI Generation Target](../../codegen-ecore-web-ui/index.html) is a concrete example of the above scenario. 
+[Nasdanika Codegen Ecore Web UI Generation Target](../../../codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/index.html) is a concrete example of the above scenario. 
 In this case the repository model is used as the input model to select elements to be exposed through the Web UI. The generator model can be used to configure how the elements are to be exposed.
 The generator target outputs rendering and routing classes as well as resource bundles to be used by the Nasdanika CDO Web Bundle Application Rendering framework. 
 
@@ -196,7 +197,7 @@ The generation is performed by a generator model created with the Nasdanika Code
 * Target configuration model.
 * Selection model.
 
-## Call for action
+#[[##]]# Call for action
 
 Author's hope is that the article will help you to discern more opportunities to improve software development practices in your organization as well as give you some ideas regarding how it can be done. 
 
@@ -211,6 +212,6 @@ Below are some steps you may take:
 * When adopting a new technology use your best talent to prototype and identify patterns and create code generators which will be used over and over throughout the organization in a robust and repeatable way instead or in addition to creation of presentations and cookbooks. Experts are hard to come by and even harder to scale. 
 * Convert existing cookbooks to code generators where it makes sense.
 
-## References
+#[[##]]# References
 
 * [Companion presentation](https://www.slideshare.net/PavelVlasov2/modeldriven-development-and-code-generation) - key points and illustrations.

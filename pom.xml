@@ -21,6 +21,34 @@
 	
 	<properties>
 		<siteDir>${project.artifactId}/${project.version}</siteDir>
+		<products.html.version>.</products.html.version> <!-- A trick for the old deployment approach. Update to version numbers. -->
+		<products.server.version>.</products.server.version>
+		 
+		<products.config.version>.</products.config.version> 
+		<products.codegen.version>.</products.codegen.version> 
+		<products.codegen-ecore.version>.</products.codegen-ecore.version> 
+		<products.codegen-ecore-web-ui.version>.</products.codegen-ecore-web-ui.version> 
+		<products.workspace-wizard.version>.</products.workspace-wizard.version>
+		 
+		<products.help.version>.</products.help.version> 
+		<products.docgen.version>.</products.docgen.version> 
+		<products.docgen-ecore.version>.</products.docgen-ecore.version>
+		 
+		<products.presentation.version>.</products.presentation.version> 
+		<products.story.version>.</products.story.version> 
+		<products.webtest.version>.</products.webtest.version> 
+		<products.webtest-model.version>.</products.webtest-model.version>
+		 
+		<products.tracker.version>.</products.tracker.version>
+		 
+		<products.maven-osgi.version>.</products.maven-osgi.version> 
+		<products.third-party.version>.</products.third-party.version> 
+		<products.tools.version>.</products.tools.version> 
+		<products.bank.version>.</products.bank.version> 
+		<products.guides.version>.</products.guides.version>
+		
+		<products.commons.version>.</products.commons.version> 
+		 
 	</properties>
 	
 	<build>
@@ -53,14 +81,15 @@
 							<name>Nasdanika Composite Repository</name>
 							<target>${project.build.directory}/site/repository</target>
 							<sites>
-								<param>https://www.nasdanika.org/products/codegen/repository</param>
-								<param>https://www.nasdanika.org/products/codegen-ecore/repository</param>
-								<param>https://www.nasdanika.org/products/codegen-ecore-web-ui/repository</param>
-								<param>https://www.nasdanika.org/products/config/repository</param>
-								<param>https://www.nasdanika.org/products/docgen/repository</param>
-								<param>https://www.nasdanika.org/products/docgen-ecore/repository</param>
-								<param>https://www.nasdanika.org/products/workspace-wizard/repository</param>
-								<param>https://www.nasdanika.org/products/tools/repository</param>
+								<param>https://www.nasdanika.org/products/codegen/${products.codegen.version}/repository</param>
+								<param>https://www.nasdanika.org/products/codegen-ecore/${products.codegen-ecore.version}/repository</param>
+								<param>https://www.nasdanika.org/products/codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/repository</param>
+								<param>https://www.nasdanika.org/products/config/${products.config.version}/repository</param>
+								<param>https://www.nasdanika.org/products/docgen/${products.docgen.version}/repository</param>
+								<param>https://www.nasdanika.org/products/docgen-ecore/${products.docgen-ecore.version}/repository</param>
+								<param>https://www.nasdanika.org/products/workspace-wizard/${products.workspace-wizard.version}/repository</param>
+								<param>https://www.nasdanika.org/products/tools/${products.tools.version}/repository</param>
+								<param>https://www.nasdanika.org/products/tracker/${products.tracker.version}/repository</param>
 							</sites>
 						</configuration>
 					</execution>
@@ -77,11 +106,7 @@
 						<phase>post-site</phase>
 						<configuration>
 							<target>
-								<ftp passive="yes" action="mkdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
-									<fileset defaultexcludes="false">
-										<include name="**" />
-									</fileset>
-								</ftp>
+								<ftp passive="yes" action="mkdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}"/>
 								
 								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
 									<fileset defaultexcludes="false">

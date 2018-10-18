@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika</groupId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<artifactId>site</artifactId>
 	<name>Nasdanika</name>
 	<!-- <packaging>eclipse-repository</packaging>-->
@@ -18,6 +18,10 @@
 			<layout>default</layout>
 		</pluginRepository>
 	</pluginRepositories>	
+	
+	<properties>
+		<siteDir>${project.artifactId}/${project.version}</siteDir>
+	</properties>
 	
 	<build>
 		<extensions>
@@ -73,13 +77,19 @@
 						<phase>post-site</phase>
 						<configuration>
 							<target>
-								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/site">
+								<ftp passive="yes" action="mkdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
+									<fileset defaultexcludes="false">
+										<include name="**" />
+									</fileset>
+								</ftp>
+								
+								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
 									<fileset defaultexcludes="false">
 										<include name="**" />
 									</fileset>
 								</ftp>
 							
-								<ftp passive="yes" action="rmdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/site">
+								<ftp passive="yes" action="rmdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
 									<fileset defaultexcludes="false">
 										<include name="**" />
 									</fileset>
@@ -109,7 +119,7 @@
 	<distributionManagement>
 		<site>
 			<id>nasdanika-org</id>
-			<url>ftp://${env.FTP_SERVER}/site</url>
+			<url>ftp://${env.FTP_SERVER}/${siteDir}</url>
 		</site>
 	</distributionManagement>	
 	

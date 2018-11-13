@@ -44,7 +44,7 @@
    </menu>   
 
    <menu name="Tools">
-      <item name="Tracker" href="../../tracker/${products.tracker.version}/index.html" />
+      <item name="Shinobi Tracker" href="../../tracker/${products.tracker.version}/index.html" />
    </menu>
 
    <menu name="Dependencies">

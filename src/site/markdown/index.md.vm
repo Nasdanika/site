@@ -57,7 +57,7 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ### Tools
 
-* [Tracker](../../tracker/$project.properties.get("products.tracker.version")/index.html) - An issue tracker for Maven projects. 
+* [Shinobi Tracker](../../tracker/$project.properties.get("products.tracker.version")/index.html) - An issue tracker for Maven projects. 
 
 
 #[[##]]# Dependencies

@@ -46,7 +46,7 @@
 		<products.maven-osgi.version>.</products.maven-osgi.version> 
 		<products.third-party.version>.</products.third-party.version> 
 		<products.tools.version>.</products.tools.version> 
-		<products.bank.version>.</products.bank.version> 
+		<products.bank.version>1.0.0-SNAPSHOT</products.bank.version> 
 		<products.guides.version>.</products.guides.version>
 		
 		<products.commons.version>.</products.commons.version> 

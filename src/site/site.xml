@@ -66,6 +66,14 @@
       <item name="Bank" href="../../bank/${products.bank.version}/index.html" />
    </menu>
    
+   <menu name="Roadmap">
+      <item name="Maven classloader service" href="roadmap/maven-classloader-service.html" />
+      <item name="Dynamic bundles" href="roadmap/dynamic-bundles.html" />
+      <item name="EMF/CDO boxing" href="roadmap/emf-boxing.html" />
+      <item name="Stored functions and proxies" href="roadmap/stored-functions-and-proxies.html" />
+      <item name="Stored promises" href="roadmap/stored-promises.html" />
+      <item name="Human as a service" href="roadmap/human-as-a-service.html" />
+   </menu>
  
    <footer><![CDATA[<a href="javascript:location='mailto:\u0073\u0075\u0070\u0070\u006f\u0072\u0074\u0040\u006e\u0061\u0073\u0064\u0061\u006e\u0069\u006b\u0061\u002e\u006f\u0072\u0067';void 0">Contact Us</a>. &nbsp; All rights reserved.]]></footer>
  

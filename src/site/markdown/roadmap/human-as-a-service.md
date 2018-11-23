@@ -22,5 +22,7 @@ var builder = ...;
 builder.buildAndDeploy(artifact source repo URL).then(notify requestor);
 ```
 
-Such code may initially send an e-mail message to a build engineer or a distribution list and then ``builder`` may initiate a build on a build server. 
+Such code may initially send an e-mail message to a build engineer or a distribution list. 
+Once build and deploy is automated ``builder`` will initiate a build on a build server without having to change the code
+above. 
 

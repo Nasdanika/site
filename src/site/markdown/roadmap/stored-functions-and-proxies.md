@@ -40,6 +40,17 @@ Both editing styles may be used at the same time:
 - Diagrams for binding composite function arguments and context properties to contained functions arguments.
 - Trees for building value arguments.      
 
+### Tree mapping
+
+One frequent task in enterprise integration is mapping between complex data structures. 
+At development time simple mappings may be done with [Eclipse Nebula Tree Mapper](https://www.eclipse.org/nebula/widgets/treemapper/treemapper.php) or a similar control.
+More complex may use a tree editor similar to [Codegen Ecore Web UI editor](https://github.com/nasdanika/codegen-ecore-web-ui) where target tree nodes may be either selected for population or not. 
+For selected nodes a value function/expression would be defined on the right by selecting inputs participating in the value building in the checkbox tree of inputs
+and then constructing a value expression/function from those inputs. A function/expression may be constructed using different languages supported by the JVM - Java itself, JavaScript, JxPath, ...
+
+At build time the mapping definition will be converted to a composite function. 
+Some of such functions may be suitable for a high level of parallelization. E.g. if a data structure is computed by taking inputs from several back-end systems calls to those systems may be performed at the same time.   
+
 ## Execution
 
 Execution of stored functions can be easily parallelized and distributed. Parallelization is achieved by using fork-join style of function argument computation. 

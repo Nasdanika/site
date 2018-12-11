@@ -23,7 +23,7 @@
 		<siteDir>${project.artifactId}/${project.version}</siteDir>
 
 		<!-- A trick for the old deployment approach. Update to version numbers. -->
-		<products.html.version>1.2.0-SNAPSHOT</products.html.version>
+		<products.html.version>2.0.0-SNAPSHOT</products.html.version>
 		<products.server.version>1.1.0-SNAPSHOT</products.server.version>
 		 
 		<products.config.version>.</products.config.version> 

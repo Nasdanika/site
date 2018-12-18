@@ -20,7 +20,7 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ### Server-side
 
-* [HTML](../../html/$project.properties.get("products.html.version")/index.html) - Java bindings for HTML, Bootstrap, Font Awesome, KnockoutJS and AngularJS. This bundle provides a fluent API for building HTML/Bootstrap code. It allows the developer to stay in Java IDE and leverage code assist and other features of Eclipse IDE and Java language. For example, this bundle makes it easy to build "polymorphic Web UI's" where base UI is built by the foundation classes and customized as needed by sub-classes.
+* [HTML](../../html/$project.properties.get("products.html.version")/master/index.html) - Java bindings for HTML, Bootstrap, Font Awesome, KnockoutJS and AngularJS. This bundle provides a fluent API for building HTML/Bootstrap code. It allows the developer to stay in Java IDE and leverage code assist and other features of Eclipse IDE and Java language. For example, this bundle makes it easy to build "polymorphic Web UI's" where base UI is built by the foundation classes and customized as needed by sub-classes.
 * [Foundation Server](../../server/$project.properties.get("products.server.version")/org.nasdanika.repository/index.html) - An [Equinox](http://www.eclipse.org/equinox/)/[OSGi](https://www.osgi.org/developer/what-is-osgi/)-based framework for domain-driven development of web applications. Server contains a number of bundles some of them are listed below.
     * [CDO](../../server/$project.properties.get("products.server.version")/org.nasdanika.cdo/index.html) - [EMF CDO Model Repositiory](https://eclipse.org/cdo/documentation/) provides transparent persistence for EMF Ecore models, i.e. all you need to persist a model is to generate CDO code from it, CDO takes care of the rest. Nasdanika CDO bundles provide several OSGi components for building CDO applications and several CDO contexts.  
         * [Security](../../server/$project.properties.get("products.server.version")/org.nasdanika.cdo.security/index.html) - provides classes and interfaces for implementing application-level security.  
@@ -57,7 +57,7 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ### Tools
 
-* [Shinobi Tracker](../../tracker/$project.properties.get("products.tracker.version")/index.html) - An issue tracker for Maven projects. 
+* [Shinobi Tracker](../../tracker/$project.properties.get("products.tracker.version")/master/index.html) - An issue tracker for Maven projects. 
 
 
 #[[##]]# Dependencies

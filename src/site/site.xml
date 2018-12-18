@@ -15,7 +15,7 @@
    </menu>
 
    <menu name="Server-side">
-      <item name="HTML" href="../../html/${products.html.version}/index.html" />
+      <item name="HTML" href="../../html/${products.html.version}/master/index.html" />
       <item name="Foundation Server" href="../../server/org.nasdanika.repository/${products.server.version}/index.html" />
    </menu>
    
@@ -44,7 +44,7 @@
    </menu>   
 
    <menu name="Tools">
-      <item name="Shinobi Tracker" href="../../tracker/${products.tracker.version}/index.html" />
+      <item name="Shinobi Tracker" href="../../tracker/${products.tracker.version}/master/index.html" />
    </menu>
 
    <menu name="Dependencies">

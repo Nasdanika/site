@@ -33,8 +33,6 @@ By doing so it increases the pool of developers, the speed of application and in
 * [Config](../../config/$project.properties.get("products.config.version")/index.html) - provides a model and an editor for creating hierarchical configurations.
 * [Codegen](../../codegen/$project.properties.get("products.codegen.version")/index.html) - Code generation Ecore/CDO model and editor. The model provides classes which can generate Eclipse project, file, Java compilation unit (with merging of generated code with existing), etc.  
 * [Codegen Ecore](../../codegen-ecore/$project.properties.get("products.codegen-ecore.version")/index.html) - Code generation from EMF Ecore models. The Nasdanika Ecore code generation editor allows to select generation targets and then select model elements for which the code should be generated. E.g. you may have a model with dozens of classes and hundreds of features and operations, but generate Web UI classes just for a couple of classes and a dozen of features. 
-* [Codegen Ecore Web UI](../../codegen-ecore-web-ui/$project.properties.get("products.codegen-ecore-web-ui.version")/index.html) - Generators and templates for generating rendereres, routes,  and resource bundles from selected EClasses and their features and operations.
-* [Workspace Wizard](../../workspace-wizard/$project.properties.get("products.workspace-wizard.version")/index.html) - Wizards to generate modeling project workspace and NFS-based application workspace. These wizards generate Maven/Tycho projects to produce an Eclipse product and P2 repository for the application.
 
 ### Knowledge management
 
@@ -49,25 +47,12 @@ By doing so it increases the pool of developers, the speed of application and in
 
 * [Presentation](../../presentation/$project.properties.get("products.presentation.version")/index.html) - features classes and extension points related to the Eclipse UI presentation such as SWT, JFace, and EMF editors.
 
-### UX
-
-* [Story](../../story/$project.properties.get("products.story.version")/index.html) - User story model and editor. User story models can be used for capturing descriptions of software features from an end-user perspective. Results of automated tests executed by WebTest can be linked to user stories scenarios documentation by the CDO Web Doc bundle. 
-* [WebTest](../../webtest/$project.properties.get("products.webtest.version")/index.html) - Web/mobile UI testing framework built on [JUnit](http://junit.org/junit4/) and [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/). Nasdanika WebTest encourages abstraction of tests from the low-level UI manipulation logic using the "Application UI Driver" which contains Actors and Pages. WebTest records test execution flow in a model and captures screenshots during execution. The model can then be served by the [org.nasdanika.cdo.web.doc](../../server/$project.properties.get("products.server.version")/org.nasdanika.cdo.web.doc/index.html) bundle. WebTest supports "sketched" execution where you may not have a UI yet, only sketches, and can already write the UI driver and tests and run them. See [Tests with sketches](https://server-side-java-development-for-innovators.books.nasdanika.org/chapter-2-automated-ui-tests/tests/sketches/) chapter in the "Server-side Java Development for Innovators" book (see below).
-* [WebTest Model](../../webtest-model/$project.properties.get("products.webtest-model.version")/index.html) - Ecore/CDO model for storing results of Web UI tests.
-
-### Tools
-
-* [Shinobi Tracker](../../tracker/$project.properties.get("products.tracker.version")/master/index.html) - An issue tracker for Maven projects. 
-
 
 #[[##]]# Dependencies
 
 * [Maven OSGi](https://github.com/Nasdanika/maven-osgi) - Maven dependencies wrapped into OSGi bundles with [Reficio p2 maven plugin](https://github.com/reficio/p2-maven-plugin).
 * [Third-party](../../third-party/$project.properties.get("products.third-party.version")/index.html) - Third party dependencies which cannot be added with the Maven OSGi product. 
 
-#[[##]]# Eclipse packages
-
-* [Nasdanika Tool Suite](../../tools/$project.properties.get("products.tools.version")/index.html) - An extension of the [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/photon) package with additional features and plugins.
 
 #[[##]]# Composite repository
 

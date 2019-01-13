@@ -23,8 +23,10 @@
       <item name="Config" href="../../config/${products.config.version}/index.html" />
       <item name="Codegen" href="../../codegen/${products.codegen.version}/index.html" />
       <item name="Codegen Ecore" href="../../codegen-ecore/${products.codegen-ecore.version}/index.html" />
+      <!--
       <item name="Codegen Ecore Web UI" href="../../codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/index.html" />
       <item name="Workspace Wizard" href="../../workspace-wizard/${products.workspace-wizard.version}/index.html" />
+      -->
    </menu>
 
    <menu name="Knowledge management">
@@ -37,6 +39,7 @@
       <item name="Presentation" href="../../presentation/${products.presentation.version}/index.html" />
    </menu>
    
+   <!--
    <menu name="UX">
       <item name="Story" href="../../story/${products.story.version}/index.html" />
       <item name="WebTest" href="../../webtest/${products.webtest.version}/index.html" />
@@ -46,15 +49,18 @@
    <menu name="Tools">
       <item name="Shinobi Tracker" href="../../tracker/${products.tracker.version}/master/index.html" />
    </menu>
+   -->
 
    <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
       <item name="Third-party" href="../../third-party/${products.third-party.version}/index.html" />
    </menu>
    
+   <!--
    <menu name="Eclipse Packages">
       <item name="Nasdanika Tool Suite" href="../../tools/${products.tools.version}/index.html" />
    </menu>
+   -->
      
    <menu name="Documentation">
       <item name="Model-Driven Development" href="articles/mdd.html" />

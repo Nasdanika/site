@@ -15,14 +15,14 @@
    </menu>
 
    <menu name="Server-side">
-      <item name="HTML" href="../../html/${products.html.version}/master/index.html" />
-      <item name="Foundation Server" href="../../server/org.nasdanika.repository/${products.server.version}/index.html" />
+      <item name="HTML" href="products/html/index.html" />
+      <item name="Foundation Server" href="../products/server/org.nasdanika.repository/${products.server.version}/index.html" />
    </menu>
    
    <menu name="Code generation">
-      <item name="Config" href="../../config/${products.config.version}/index.html" />
-      <item name="Codegen" href="../../codegen/${products.codegen.version}/index.html" />
-      <item name="Codegen Ecore" href="../../codegen-ecore/${products.codegen-ecore.version}/index.html" />
+      <item name="Config" href="../products/config/${products.config.version}/index.html" />
+      <item name="Codegen" href="../products/codegen/${products.codegen.version}/index.html" />
+      <item name="Codegen Ecore" href="../products/codegen-ecore/${products.codegen-ecore.version}/index.html" />
       <!--
       <item name="Codegen Ecore Web UI" href="../../codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/index.html" />
       <item name="Workspace Wizard" href="../../workspace-wizard/${products.workspace-wizard.version}/index.html" />
@@ -30,13 +30,13 @@
    </menu>
 
    <menu name="Knowledge management">
-      <item name="Help" href="../../help/${products.help.version}/index.html" />
-      <item name="Docgen" href="../../docgen/${products.docgen.version}/index.html" />
-      <item name="Docgen Ecore" href="../../docgen-ecore/${products.docgen-ecore.version}/index.html" />
+      <item name="Help" href="../products/help/${products.help.version}/index.html" />
+      <item name="Docgen" href="../products/docgen/${products.docgen.version}/index.html" />
+      <item name="Docgen Ecore" href="../products/docgen-ecore/${products.docgen-ecore.version}/index.html" />
    </menu>
    
    <menu name="Eclipse UI">
-      <item name="Presentation" href="../../presentation/${products.presentation.version}/index.html" />
+      <item name="Presentation" href="../products/presentation/${products.presentation.version}/index.html" />
    </menu>
    
    <!--
@@ -53,7 +53,7 @@
 
    <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
-      <item name="Third-party" href="../../third-party/${products.third-party.version}/index.html" />
+      <item name="Third-party" href="../products/third-party/${products.third-party.version}/index.html" />
    </menu>
    
    <!--
@@ -65,11 +65,11 @@
    <menu name="Documentation">
       <item name="Model-Driven Development" href="articles/mdd.html" />
       <item name="Server-side Java Development for Innovators" href="https://server-side-java-development-for-innovators.books.nasdanika.org/" />
-      <item name="Guides" href="../../guides/${products.guides.version}/index.html" />
+      <item name="Guides" href="../products/guides/${products.guides.version}/index.html" />
    </menu>
    
    <menu name="Reference Implementations">
-      <item name="Bank" href="../../bank/${products.bank.version}/index.html" />
+      <item name="Bank" href="../products/bank/${products.bank.version}/index.html" />
    </menu>
    
    <menu name="Roadmap">

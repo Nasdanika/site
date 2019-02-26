@@ -14,9 +14,9 @@
       <item name="Nasdanika @ GitHub" href="https://github.com/Nasdanika" />
    </menu>
 
-   <menu name="Server-side">
+   <menu name="General">
       <item name="HTML" href="products/html/index.html" />
-      <item name="Foundation Server" href="../products/server/org.nasdanika.repository/${products.server.version}/index.html" />
+      <!-- <item name="Foundation Server" href="../products/server/org.nasdanika.repository/${products.server.version}/index.html" /> -->
    </menu>
    
    <menu name="Code generation">

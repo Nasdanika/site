@@ -19,14 +19,13 @@
       <!-- <item name="Foundation Server" href="../products/server/org.nasdanika.repository/${products.server.version}/index.html" /> -->
    </menu>
    
+   <!--
    <menu name="Code generation">
       <item name="Config" href="../products/config/${products.config.version}/index.html" />
       <item name="Codegen" href="../products/codegen/${products.codegen.version}/index.html" />
       <item name="Codegen Ecore" href="../products/codegen-ecore/${products.codegen-ecore.version}/index.html" />
-      <!--
       <item name="Codegen Ecore Web UI" href="../../codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/index.html" />
       <item name="Workspace Wizard" href="../../workspace-wizard/${products.workspace-wizard.version}/index.html" />
-      -->
    </menu>
 
    <menu name="Knowledge management">
@@ -38,8 +37,7 @@
    <menu name="Eclipse UI">
       <item name="Presentation" href="../products/presentation/${products.presentation.version}/index.html" />
    </menu>
-   
-   <!--
+
    <menu name="UX">
       <item name="Story" href="../../story/${products.story.version}/index.html" />
       <item name="WebTest" href="../../webtest/${products.webtest.version}/index.html" />
@@ -71,7 +69,8 @@
    <menu name="Reference Implementations">
       <item name="Bank" href="../products/bank/${products.bank.version}/index.html" />
    </menu>
-   
+
+   <!--   
    <menu name="Roadmap">
       <item name="Maven classloader service" href="roadmap/maven-classloader-service.html" />
       <item name="Dynamic bundles" href="roadmap/dynamic-bundles.html" />
@@ -80,6 +79,7 @@
       <item name="Stored promises" href="roadmap/stored-promises.html" />
       <item name="Human as a service" href="roadmap/human-as-a-service.html" />
    </menu>
+   --->
  
    <footer>
 	Build ${env.CIRCLE_BUILD_NUM}.${env.CIRCLE_BRANCH}.${env.CIRCLE_SHA1} 

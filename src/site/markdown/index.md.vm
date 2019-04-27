@@ -22,35 +22,10 @@ By doing so it increases the pool of developers, the speed of application and in
 
 * [HTML](products/html/index.html) - Nasdanika HTML features several libraries providing [fluent API](https://en.wikipedia.org/wiki/Fluent_interface) for building HTML user interfaces. 
 
-### Code generation
-
-* [Config](../products/config/$project.properties.get("products.config.version")/index.html) - provides a model and an editor for creating hierarchical configurations.
-* [Codegen](../products/codegen/$project.properties.get("products.codegen.version")/index.html) - Code generation Ecore/CDO model and editor. The model provides classes which can generate Eclipse project, file, Java compilation unit (with merging of generated code with existing), etc.  
-* [Codegen Ecore](../products/codegen-ecore/$project.properties.get("products.codegen-ecore.version")/index.html) - Code generation from EMF Ecore models. The Nasdanika Ecore code generation editor allows to select generation targets and then select model elements for which the code should be generated. E.g. you may have a model with dozens of classes and hundreds of features and operations, but generate Web UI classes just for a couple of classes and a dozen of features. 
-
-### Knowledge management
-
-* [Help](../products/help/$project.properties.get("products.help.version")/index.html) provides:
-    * The primary toc for other Nasdanika help toc's to link to.
-    * Markdown content producer which converts intercepts *.md.html help resource requests, finds corresponding *.md files and converts them to HTML on the fly.
-    * Markdown processor extensions.
-* [Docgen](../products/docgen/$project.properties.get("products.docgen.version")/index.html) - Documentation generation framework.
-* [Docgen Ecore](../products/docgen-ecore/$project.properties.get("products.docgen-ecore.version")/index.html) - Documentation generator for Ecore models - static HTML and Eclipse help.
-
-### Eclipse UI
-
-* [Presentation](../products/presentation/$project.properties.get("products.presentation.version")/index.html) - features classes and extension points related to the Eclipse UI presentation such as SWT, JFace, and EMF editors.
-
-
 #[[##]]# Dependencies
 
 * [Maven OSGi](https://github.com/Nasdanika/maven-osgi) - Maven dependencies wrapped into OSGi bundles with [Reficio p2 maven plugin](https://github.com/reficio/p2-maven-plugin).
 * [Third-party](../products/third-party/$project.properties.get("products.third-party.version")/index.html) - Third party dependencies which cannot be added with the Maven OSGi product. 
-
-
-#[[##]]# Composite repository
-
-``https://www.nasdanika.org/products/site/repository``
 
 #[[##]]# Documentation
 
@@ -62,14 +37,3 @@ By doing so it increases the pool of developers, the speed of application and in
 
 * [Bank](../products/bank/$project.properties.get("products.bank.version")/index.html) - A simple enough bank domain model to use for demonstration purposes in different Nasdanika products. 
 
-#[[##]]# Roadmap
-
-This sections outlines ideas for future Nasdanika projects. Some of those ideas may be already implemented elsewhere and additional research is required before proceeding
-with implementations. Shall you be aware of such an implementation - drop us a line. If you'd like to implement some of the below ideas - we can probably collaborate on this! 
-  
-* [Maven classloader service](roadmap/maven-classloader-service.html) - construct a classloader for a Maven artifact version, load a class, run it - lambda-like execution in OSGi environment.
-* [Dynamic bundles](roadmap/dynamic-bundles.html) - similar to the above but using bundles and P2.
-* [EMF/CD](roadmap/emf-boxing.html) - Store Java objects as a graph of EMF/CDO objects. 
-* [Stored functions and proxies](roadmap/stored-functions-and-proxies.html) - Store functions as EMF/CDO objects. Provide support of ``bind(arguments)`` to compose functions. 
-* [Stored promises](roadmap/stored-promises.html) - Store promises as EMF/CDO objects. Promises provide ``then()`` methods which allow to build asynchronous long-running processes using Java concepts and API's.
-* [Human as a service](roadmap/human-as-a-service.html) - "Invoke" humans in the same way as you invoke asynchronous Java methods.

@@ -79,7 +79,7 @@
       <item name="Stored promises" href="roadmap/stored-promises.html" />
       <item name="Human as a service" href="roadmap/human-as-a-service.html" />
    </menu>
-   --->
+   -->
  
    <footer>
 	Build ${env.CIRCLE_BUILD_NUM}.${env.CIRCLE_BRANCH}.${env.CIRCLE_SHA1} 

@@ -50,7 +50,7 @@
    -->
 
    <menu name="Dependencies">
-      <item name="Maven OGSi" href="#" />
+      <item name="Maven OGSi" href="products/maven-osgi/index.html" />
       <item name="Third-party" href="products/third-party/index.html" />
    </menu>
    

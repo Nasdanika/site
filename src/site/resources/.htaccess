@@ -3,5 +3,6 @@ RewriteEngine On
 # Product redirects
 RewriteRule ^products/html/(.*)$ /products/html/2.0.0-SNAPSHOT/master/$1 [NC,L]
 RewriteRule ^products/third-party/(.*)$ /products/third-party/2.2019.04-SNAPSHOT/master/$1 [NC,L]
+RewriteRule ^products/maven-osgi/(.*)$ /products/maven-osgi/2.2019.04-SNAPSHOT/master/$1 [NC,L]
 RewriteRule ^products/guides/(.*)$ /products/guides/$1 [NC,L]
 RewriteRule ^products/bank/(.*)$ /products/bank/1.0.0-SNAPSHOT/$1 [NC,L]

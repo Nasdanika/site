@@ -51,7 +51,7 @@
 
    <menu name="Dependencies">
       <item name="Maven OGSi" href="#" />
-      <item name="Third-party" href="../products/third-party/${products.third-party.version}/index.html" />
+      <item name="Third-party" href="products/third-party/index.html" />
    </menu>
    
    <!--

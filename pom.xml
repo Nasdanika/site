@@ -20,37 +20,7 @@
 	</pluginRepositories>	
 	
 	<properties>
-		<siteDir>${project.artifactId}/${project.version}</siteDir>
-
-		<!-- A trick for the old deployment approach. Update to version numbers. -->
-		<products.html.version>2.0.0-SNAPSHOT</products.html.version>
-		<products.server.version>1.1.0-SNAPSHOT</products.server.version>
-		 
-		<products.config.version>.</products.config.version> 
-		<products.codegen.version>.</products.codegen.version> 
-		<products.codegen-ecore.version>.</products.codegen-ecore.version> 
-		<products.codegen-ecore-web-ui.version>.</products.codegen-ecore-web-ui.version> 
-		<products.workspace-wizard.version>.</products.workspace-wizard.version>
-		 
-		<products.help.version>.</products.help.version> 
-		<products.docgen.version>.</products.docgen.version> 
-		<products.docgen-ecore.version>.</products.docgen-ecore.version>
-		 
-		<products.presentation.version>.</products.presentation.version> 
-		<products.story.version>.</products.story.version> 
-		<products.webtest.version>.</products.webtest.version> 
-		<products.webtest-model.version>.</products.webtest-model.version>
-		 
-		<products.tracker.version>0.1.0-SNAPSHOT</products.tracker.version>
-		 
-		<products.maven-osgi.version>.</products.maven-osgi.version> 
-		<products.third-party.version>.</products.third-party.version> 
-		<products.tools.version>.</products.tools.version> 
-		<products.bank.version>1.0.0-SNAPSHOT</products.bank.version> 
-		<products.guides.version>.</products.guides.version>
-		
-		<products.commons.version>.</products.commons.version> 
-		 
+		<siteDir>${project.artifactId}/${project.version}</siteDir>		 
 	</properties>
 	
 	<build>
@@ -83,15 +53,8 @@
 							<name>Nasdanika Composite Repository</name>
 							<target>${project.build.directory}/site/repository</target>
 							<sites>
-								<param>https://www.nasdanika.org/products/codegen/${products.codegen.version}/repository</param>
-								<param>https://www.nasdanika.org/products/codegen-ecore/${products.codegen-ecore.version}/repository</param>
-								<param>https://www.nasdanika.org/products/codegen-ecore-web-ui/${products.codegen-ecore-web-ui.version}/repository</param>
-								<param>https://www.nasdanika.org/products/config/${products.config.version}/repository</param>
-								<param>https://www.nasdanika.org/products/docgen/${products.docgen.version}/repository</param>
-								<param>https://www.nasdanika.org/products/docgen-ecore/${products.docgen-ecore.version}/repository</param>
-								<param>https://www.nasdanika.org/products/workspace-wizard/${products.workspace-wizard.version}/repository</param>
-								<param>https://www.nasdanika.org/products/tools/${products.tools.version}/repository</param>
-								<param>https://www.nasdanika.org/products/tracker/${products.tracker.version}/repository</param>
+								<param>https://www.nasdanika.org/home/products/html/repository</param>
+								<param>https://www.nasdanika.org/home/products/third-party/repository</param>
 							</sites>
 						</configuration>
 					</execution>

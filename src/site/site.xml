@@ -67,7 +67,7 @@
    </menu>
    
    <menu name="Reference Implementations">
-      <item name="Bank" href="../products/bank/${products.bank.version}/index.html" />
+      <item name="Bank" href="products/bank/index.html" />
    </menu>
 
    <!--   

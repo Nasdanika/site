@@ -18,8 +18,7 @@ By doing so it increases the pool of developers, the speed of application and in
 
 ## Products
 
-### General
-
+* [Core](products/core/index.html) - Nasdanika core bundles. 
 * [HTML](products/html/index.html) - Nasdanika HTML features several libraries providing [fluent API](https://en.wikipedia.org/wiki/Fluent_interface) for building HTML user interfaces. 
 
 ## Dependencies

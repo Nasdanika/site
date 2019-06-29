@@ -17,6 +17,7 @@
    <menu name="Products">
       <item name="Core" href="products/core/index.html" />
       <item name="HTML" href="products/html/index.html" />
+      <item name="Codegen" href="products/codegen/index.html" />
    </menu>
    
    <!--
@@ -100,7 +101,7 @@
   <custom>
     <fluidoSkin>
       <googleSearch>
-        <sitesearch>https://www.nasdanika.org/products</sitesearch>
+        <sitesearch>https://www.nasdanika.org/home</sitesearch>
       </googleSearch>      
     </fluidoSkin>
   </custom>

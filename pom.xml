@@ -55,11 +55,29 @@
 							<sites>
 								<param>https://www.nasdanika.org/home/products/html/repository</param>
 								<param>https://www.nasdanika.org/home/products/third-party/repository</param>
+								<param>https://www.nasdanika.org/home/products/core/repository</param>
+								<param>https://www.nasdanika.org/home/products/maven-osgi/repository</param>
+								<param>https://www.nasdanika.org/home/products/codegen/repository</param>
+							</sites>
+						</configuration>
+					</execution>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<id>repository-all-dependencies</id>
+						<configuration>
+							<name>Nasdanika Composite Repository</name>
+							<target>${project.build.directory}/site/repository-all-dependencies</target>
+							<sites>
+								<param>https://www.nasdanika.org/home/repository</param>
+								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository</param>
+								<param>http://download.eclipse.org/releases/2019-06</param>
 							</sites>
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>						
       			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

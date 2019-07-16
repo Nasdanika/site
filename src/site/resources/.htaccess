@@ -9,3 +9,4 @@ RewriteRule ^products/maven-osgi/(.*)$ /products/maven-osgi/2.2019.04/master/$1 
 RewriteRule ^products/guides/(.*)$ /products/guides/$1 [NC,L]
 RewriteRule ^products/bank/(.*)$ /products/bank/1.0.0-SNAPSHOT/master/$1 [NC,L]
 RewriteRule ^products/cv/(.*)$ /products/cv/0.1.0-SNAPSHOT/master/$1 [NC,L]
+RewriteRule ^products/rigel/(.*)$ /products/rigel/0.1.0-SNAPSHOT/master/$1 [NC,L]

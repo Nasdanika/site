@@ -53,11 +53,13 @@
 							<name>Nasdanika Composite Repository</name>
 							<target>${project.build.directory}/site/repository</target>
 							<sites>
+								<param>https://www.nasdanika.org/home/products/core/repository</param>
 								<param>https://www.nasdanika.org/home/products/html/repository</param>
 								<param>https://www.nasdanika.org/home/products/third-party/repository</param>
-								<param>https://www.nasdanika.org/home/products/core/repository</param>
 								<param>https://www.nasdanika.org/home/products/maven-osgi/repository</param>
 								<param>https://www.nasdanika.org/home/products/codegen/repository</param>
+								<param>https://www.nasdanika.org/home/products/rigel/repository</param>
+								<param>https://www.nasdanika.org/home/products/sage/repository</param>
 							</sites>
 						</configuration>
 					</execution>

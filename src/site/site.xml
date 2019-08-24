@@ -18,6 +18,8 @@
       <item name="Core" href="products/core/index.html" />
       <item name="HTML" href="products/html/index.html" />
       <item name="Codegen" href="products/codegen/index.html" />
+      <item name="Rigel" href="products/rigel/index.html" />
+      <item name="Sage" href="products/sage/index.html" />
    </menu>
    
    <!--
@@ -55,11 +57,9 @@
       <item name="Third-party" href="products/third-party/index.html" />
    </menu>
    
-   <!--
    <menu name="Eclipse Packages">
-      <item name="Nasdanika Tool Suite" href="../../tools/${products.tools.version}/index.html" />
+      <item name="Nasdanika Tool Suite" href="products/tool-suite/index.html" />
    </menu>
-   -->
      
    <menu name="Documentation">
       <item name="Model-Driven Development" href="articles/mdd.html" />

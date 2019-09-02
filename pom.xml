@@ -48,6 +48,21 @@
 						<goals>
 							<goal>generate</goal>
 						</goals>
+						<id>foundation-repository</id>
+						<configuration>
+							<name>Nasdanika Composite Repository of Fundational dependencies - Eclipse and Oribt</name>
+							<!-- The goal is to have to update links in one place and propagate to all products -->
+							<target>${project.build.directory}/site/foundation-repository</target>
+							<sites>
+								<param>http://download.eclipse.org/releases/2019-06</param>
+								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository</param>
+							</sites>
+						</configuration>
+					</execution>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
 						<id>repository</id>
 						<configuration>
 							<name>Nasdanika Composite Repository</name>

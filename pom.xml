@@ -19,7 +19,19 @@
 		</pluginRepository>
 	</pluginRepositories>	
 	
+	<properties>
+		<siteDir>${project.artifactId}/${project.version}</siteDir>		 
+	</properties>
+	
 	<build>
+		<extensions>
+			<!-- Enabling the use of FTP -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>3.0.0</version>
+			</extension>
+		</extensions>
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
@@ -83,7 +95,57 @@
 					</execution>
 				</executions>
 			</plugin>						
+      			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<execution>
+						<id>ftp</id>
+						<phase>post-site</phase>
+						<configuration>
+							<target>
+								<ftp passive="yes" action="mkdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}"/>
+								
+								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
+									<fileset defaultexcludes="false">
+										<include name="**" />
+									</fileset>
+								</ftp>
+							
+								<ftp passive="yes" action="rmdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
+									<fileset defaultexcludes="false">
+										<include name="**" />
+									</fileset>
+								</ftp>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>commons-net</groupId>
+						<artifactId>commons-net</artifactId>
+						<version>1.4.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-commons-net</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>			
 		</plugins>
 	</build>
+	<distributionManagement>
+		<site>
+			<id>nasdanika-org</id>
+			<url>ftp://${env.FTP_SERVER}/${siteDir}</url>
+		</site>
+	</distributionManagement>	
 	
 </project>

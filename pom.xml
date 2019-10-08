@@ -20,7 +20,7 @@
 	</pluginRepositories>	
 	
 	<properties>
-		<siteDir>${project.artifactId}/${project.version}</siteDir>		 
+		<siteDir>${project.artifactId}/${project.version}/${env.CIRCLE_BRANCH}</siteDir>		 
 	</properties>
 	
 	<build>

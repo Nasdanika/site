@@ -5,7 +5,6 @@
 	<version>1.0.0</version>
 	<artifactId>site</artifactId>
 	<name>Nasdanika</name>
-	<!-- <packaging>eclipse-repository</packaging>-->
 
 	<pluginRepositories>
 		<pluginRepository>

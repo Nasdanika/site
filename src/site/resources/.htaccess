@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Product rewrites. 
+RewriteRule ^products/core/(.*)$ /products/core/1.0.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/html/(.*)$ /products/html/2.0.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/codegen/(.*)$ /products/codegen/0.2.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/third-party/(.*)$ /products/third-party/2.2019.09-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/maven-osgi/(.*)$ /products/maven-osgi/2.2019.04/develop/$1 [NC,L]
+RewriteRule ^products/guides/(.*)$ /products/guides/$1 [NC,L]
+RewriteRule ^products/bank/(.*)$ /products/bank/1.0.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/cv/(.*)$ /products/cv/0.1.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/rigel/(.*)$ /products/rigel/0.1.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/sage/(.*)$ /products/sage/0.1.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/vinci/(.*)$ /products/vinci/0.1.0-SNAPSHOT/develop/$1 [NC,L]
+RewriteRule ^products/tool-suite/(.*)$ /products/tool-suite/2019.10.01-SNAPSHOT/develop/$1 [NC,L]

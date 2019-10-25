@@ -59,6 +59,7 @@
    </menu>
    
    <menu name="Eclipse Packages">
+      <item name="Nasdanika Developer Tools" href="products/developer-tools/index.html" />
       <item name="Nasdanika Tool Suite" href="products/tool-suite/index.html" />
    </menu>
      

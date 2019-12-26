@@ -55,6 +55,7 @@
 							<sites>
 								<param>http://download.eclipse.org/releases/2019-06</param>
 								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository</param>
+								<param>http://download.eclipse.org/nebula/releases/2.3.0</param>
 							</sites>
 						</configuration>
 					</execution>

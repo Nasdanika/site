@@ -53,8 +53,8 @@
 							<!-- The goal is to have to update links in one place and propagate to all products -->
 							<target>${project.build.directory}/site/foundation-repository</target>
 							<sites>
-								<param>http://download.eclipse.org/releases/2019-06</param>
-								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository</param>
+								<param>http://download.eclipse.org/releases/2019-12</param>
+								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository</param>
 								<param>http://download.eclipse.org/nebula/releases/2.3.0</param>
 							</sites>
 						</configuration>
@@ -88,8 +88,8 @@
 							<target>${project.build.directory}/site/repository-all-dependencies</target>
 							<sites>
 								<param>https://www.nasdanika.org/home/repository</param>
-								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository</param>
-								<param>http://download.eclipse.org/releases/2019-06</param>
+								<param>https://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository</param>
+								<param>http://download.eclipse.org/releases/2019-12</param>
 							</sites>
 						</configuration>
 					</execution>

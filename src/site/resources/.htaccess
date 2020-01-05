@@ -3,7 +3,7 @@ RewriteEngine On
 # Product rewrites. 
 
 # Master
-RewriteRule ^products/third-party/(.*)$ /products/third-party/2.2019.09-SNAPSHOT/master/$1 [NC,L]
+RewriteRule ^products/third-party/(.*)$ /products/third-party/2.2020.01-SNAPSHOT/master/$1 [NC,L]
 RewriteRule ^products/maven-osgi/(.*)$ /products/maven-osgi/2.2019.11/master/$1 [NC,L]
 RewriteRule ^products/developer-tools/(.*)$ /products/developer-tools/2020.01.01-SNAPSHOT/master/$1 [NC,L]
 
